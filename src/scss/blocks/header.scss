@@ -13,6 +13,9 @@
     justify-content: space-between;
     padding: 24px 24px 0 24px;
     margin-bottom: 112px;
+    @include responsive(laptop) {
+      padding: 78px 63px 0 80px;
+    }
   }
 
   &__start {

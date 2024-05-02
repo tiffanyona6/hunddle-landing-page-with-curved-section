@@ -15,4 +15,48 @@
       line-height: 72px;
     }
   }
+
+  &--info {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--blue-dark);
+    margin: 0;
+    margin-bottom: 16px;
+    @include responsive(laptop) {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  &--grow {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--blue-dark);
+    margin: 0;
+    margin-bottom: 16px;
+    @include responsive(laptop) {
+      font-size: 40px;
+      line-height: 60px;
+      text-align: left;
+    }
+  }
+
+  &--cta {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--blue-dark);
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &--form {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 16px;
+  }
 }
