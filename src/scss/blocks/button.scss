@@ -1,0 +1,13 @@
+.button {
+  background-color: transparent;
+  border: 1px solid color var(--pink);
+  padding: 5px 17px;
+  border-radius: 100px;
+
+  &--stroke {
+    color: var(--pink);
+
+    font-size: 9.41px;
+    font-weight: 400;
+  }
+}

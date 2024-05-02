@@ -1,0 +1,17 @@
+.header {
+  &__logo {
+    width: 96px;
+    height: 16px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+    margin-bottom: 112px;
+  }
+
+  &__start {
+    text-align: center;
+    padding: 0 40px 0 39px;
+  }
+}
