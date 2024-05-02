@@ -1,3 +1,4 @@
+@use "../mixins/responsive.scss" as *;
 .title {
   margin-top: 0;
   font-family: "Poppins", sans-serif;
@@ -8,5 +9,10 @@
     line-height: 36px;
     margin-bottom: 24px;
     color: var(--blue-dark);
+
+    @include responsive(laptop) {
+      font-size: 48px;
+      line-height: 72px;
+    }
   }
 }

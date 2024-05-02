@@ -1,3 +1,4 @@
+@use "../mixins/responsive.scss" as *;
 .text {
   margin-top: 0;
   font-family: "Open Sans", sans-serif;
@@ -8,5 +9,24 @@
     line-height: 21px;
     margin-bottom: 48px;
     color: var(--blue-dark);
+    @include responsive(laptop) {
+      padding: 0 109px 0 109px;
+      line-height: 30px;
+    }
+  }
+  &--bold {
+    font-weight: 700;
+    line-height: 91.4px;
+    font-size: 60.95px;
+    margin: 0;
+    margin-bottom: 0.57px;
+  }
+
+  &--grey {
+    font-weight: 400;
+    line-height: 22, 9px;
+    font-size: 15.24px;
+    margin: 0;
+    color: var(--grey);
   }
 }

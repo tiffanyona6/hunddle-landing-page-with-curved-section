@@ -1,0 +1,17 @@
+.number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 108px 0 107px;
+  &__icon {
+    width: 35.56px;
+  }
+
+  &__communities {
+    margin-bottom: 112.4px;
+  }
+
+  &__text {
+    width: 31.22px;
+  }
+}

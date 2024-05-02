@@ -1,13 +1,27 @@
+@use "../mixins/responsive.scss" as *;
 .button {
   background-color: transparent;
   border: 1px solid color var(--pink);
-  padding: 5px 17px;
+
   border-radius: 100px;
+  font-family: "Open Sans", sans-serif;
 
   &--stroke {
     color: var(--pink);
-
     font-size: 9.41px;
     font-weight: 400;
+    padding: 8px 17px;
+
+    @include responsive(laptop) {
+      font-size: 16px;
+    }
+  }
+
+  &--fill {
+    color: white;
+    background-color: var(--pink);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 11px 39px;
   }
 }
