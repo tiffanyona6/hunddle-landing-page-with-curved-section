@@ -1,4 +1,13 @@
+@use "../mixins/responsive.scss" as *;
+
 .footer {
   background-color: var(--blue-dark);
-  padding: 100px 28px 46px 28px;
+  padding: 80px 28px 46px 28px;
+
+  @include responsive(laptop) {
+    padding: 100px 248px 215px 120px;
+    display: grid;
+    grid-template-columns: 346px 520px;
+    gap: 320px;
+  }
 }
